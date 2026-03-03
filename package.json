@@ -1,6 +1,7 @@
 {
   "name": "markly-mcp-server",
-  "version": "1.1.0",
+  "version": "1.1.1",
+  "mcpName": "io.github.Whitemarmot/markly",
   "description": "MCP Server for Markly.cloud - watermark images via AI agents",
   "type": "module",
   "main": "dist/index.js",

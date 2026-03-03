@@ -1,0 +1,29 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.Whitemarmot/markly",
+  "description": "Add text or logo watermarks to images via the Markly.cloud API. Batch supported.",
+  "repository": {
+    "url": "https://github.com/Whitemarmot/markly-mcp-server",
+    "source": "github"
+  },
+  "version": "1.1.1",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "markly-mcp-server",
+      "version": "1.1.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "description": "Your Markly API key (get one at markly.cloud/developers)",
+          "isRequired": true,
+          "format": "string",
+          "isSecret": true,
+          "name": "MARKLY_API_KEY"
+        }
+      ]
+    }
+  ]
+}
