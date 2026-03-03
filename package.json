@@ -1,0 +1,48 @@
+{
+  "name": "markly-mcp-server",
+  "version": "1.1.0",
+  "description": "MCP Server for Markly.cloud - watermark images via AI agents",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "markly-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch"
+  },
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "watermark",
+    "image",
+    "markly",
+    "ai-tools"
+  ],
+  "author": "Markly <hello@markly.cloud>",
+  "license": "MIT",
+  "homepage": "https://www.markly.cloud",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Whitemarmot/markly-mcp-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Whitemarmot/markly-mcp-server/issues"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0"
+  }
+}
