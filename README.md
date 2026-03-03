@@ -63,3 +63,14 @@ Ask your AI agent to watermark an image:
 ## License
 
 MIT
+
+
+---
+
+<p align="center">
+  <a href="https://www.copyright01.com/certificat/020DC4B654698B93E61ECAD7031B5979">
+    <img src="https://www.copyright01.com/badge/020DC4B654698B93E61ECAD7031B5979.svg" alt="Protected by Copyright01" />
+  </a>
+  <br>
+  <sub>Protected by <a href="https://www.copyright01.com">Copyright01</a> - Ref: CR-2026-33771 - Certified 2026-03-03</sub>
+</p>
