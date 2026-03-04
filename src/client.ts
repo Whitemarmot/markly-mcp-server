@@ -14,21 +14,17 @@ export class MarklyClient {
       /\/$/,
       ""
     );
-
-    if (!this.apiKey) {
-      throw new Error(
-        "MARKLY_API_KEY environment variable is required. " +
-          "Generate one with: php artisan api:token:create 'MCP Server'"
-      );
-    }
   }
 
   private headers(): Record<string, string> {
-    return {
-      Authorization: `Bearer ${this.apiKey}`,
+    const h: Record<string, string> = {
       Accept: "application/json",
-      "User-Agent": "MarklyMCP/1.0",
+      "User-Agent": "MarklyMCP/1.1",
     };
+    if (this.apiKey) {
+      h["Authorization"] = `Bearer ${this.apiKey}`;
+    }
+    return h;
   }
 
   async postJson(
